@@ -23,7 +23,6 @@
   <div class="container">
     <main>
 
-      <!-- ===== SECTION 01: ОТЗЫВЫ ===== -->
       <section>
         <div class="section-header">
           <span class="section-num">01</span>
@@ -96,7 +95,6 @@
         </div>
       </section>
 
-      <!-- ===== SECTION 02: ЧЕКЛИСТ БЕЗОПАСНОСТИ ===== -->
       <section>
         <div class="section-header">
           <span class="section-num">02</span>
@@ -194,7 +192,6 @@
         </div>
       </section>
 
-      <!-- ===== SECTION 03: ПОЛЕЗНЫЕ РЕСУРСЫ ===== -->
       <section>
         <div class="section-header">
           <span class="section-num">03</span>
@@ -250,7 +247,6 @@
         </div>
       </section>
 
-      <!-- ===== SECTION 04: FAQ ===== -->
       <section>
         <div class="section-header">
           <span class="section-num">04</span>
@@ -318,7 +314,6 @@
   </footer>
 
   <script>
-    // ===== FAQ =====
     function toggleFaq(el) {
       var item = el.parentElement;
       var isOpen = item.classList.contains('open');
@@ -326,7 +321,6 @@
       if (!isOpen) { item.classList.add('open'); }
     }
 
-    // ===== CHECKLIST =====
     function toggleCheck(el) {
       var isChecked = el.style.color !== 'transparent' && el.style.color !== '';
       if (isChecked) {
@@ -357,7 +351,6 @@
       else label.textContent = '🎉 Отличная работа! Вы выполнили все пункты чеклиста.';
     }
 
-    // ===== REVIEWS =====
     (function () {
       var REVIEWS_KEY = 'kz-reviews';
       var reviewsList = document.getElementById('reviews-list');
