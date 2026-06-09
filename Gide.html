@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КиберЗащита - Гайды</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html"><span class="logo-dot"></span>КиберЗащита</a>
+    <nav>
+      <a class="nav-btn" href="index.html">Главная</a>
+      <a class="nav-btn" href="recommendations.html">Советы</a>
+      <a class="nav-btn" href="threats.html">Угрозы</a>
+      <a class="nav-btn active" href="Gide.html">Гайды</a>
+      <a class="nav-btn" href="myths.html">Фейки</a>
+      <a class="nav-btn" href="Otzivi.html">Отзывы</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+
+      <!-- ===== SECTION 01: ЭКСТРЕННЫЕ ГАЙДЫ (ВКЛАДКИ) ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2>Гайды по экстренным ситуациям</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 900px; margin-bottom: 28px;">Выберите проблему кнопкой ниже. Откроется пошаговый гайд с конкретными действиями, которые нужно выполнить немедленно.</p>
+
+        <input class="guide-tab-radio" type="radio" name="guide-problem" id="problem-ransom" checked>
+        <input class="guide-tab-radio" type="radio" name="guide-problem" id="problem-trojan">
+        <input class="guide-tab-radio" type="radio" name="guide-problem" id="problem-phishing">
+        <input class="guide-tab-radio" type="radio" name="guide-problem" id="problem-money">
+
+        <div class="guide-tabs">
+          <div class="guide-controls">
+            <label for="problem-ransom">Шифровальщик</label>
+            <label for="problem-trojan">Троян</label>
+            <label for="problem-phishing">Украли аккаунт</label>
+            <label for="problem-money">Украли деньги</label>
+          </div>
+
+          <div class="guide-panels">
+            <article id="panel-ransom" class="guide-panel">
+              <h3>Если столкнулись с вирусом-шифровальщиком</h3>
+              <p>Цель — остановить распространение и сохранить максимум данных для восстановления. Каждая минута промедления может означать потерю новых файлов.</p>
+              <ul>
+                <li><strong>Немедленно отключите ПК от интернета</strong> — выдерните кабель или отключите Wi-Fi. Это остановит дальнейшее шифрование сетевых дисков.</li>
+                <li>Отсоедините все внешние носители (флешки, внешние диски) — вирус шифрует всё доступное.</li>
+                <li>Не перезагружайте компьютер многократно и не удаляйте файлы вручную.</li>
+                <li>Сделайте фото экрана с требованием выкупа, расширениями зашифрованных файлов и любыми идентификаторами — это поможет найти дешифратор.</li>
+                <li>Зайдите с другого устройства на <strong>nomoreransom.org</strong> — возможно, бесплатный дешифратор уже существует.</li>
+                <li>Запустите проверку с загрузочного антивирусного диска (Kaspersky Rescue Disk, ESET SysRescue) — скачайте образ на другом устройстве.</li>
+                <li>Восстанавливайте файлы только из резервных копий, созданных до заражения.</li>
+                <li>Если заражение глубокое — переустановите систему с форматированием диска.</li>
+                <li>Подайте заявление в киберполицию — это важно для статистики и возможного расследования.</li>
+              </ul>
+              <div class="info-box danger" style="margin-top: 16px;">
+                <strong>Не платите выкуп</strong>
+                <p>Около 40% жертв, заплативших выкуп, так и не получили ключ дешифровки. Оплата финансирует преступников и поощряет новые атаки. Воспользуйтесь nomoreransom.org прежде всего.</p>
+              </div>
+            </article>
+
+            <article id="panel-trojan" class="guide-panel">
+              <h3>Если обнаружен троян или подозрительная активность</h3>
+              <p>Главная задача — изолировать устройство и удалить вредоносное ПО без утечки новых данных. Действуйте методично, не паникуйте.</p>
+              <ul>
+                <li><strong>Отключите интернет</strong> — прервите канал управления трояном.</li>
+                <li>Если активен удалённый доступ (AnyDesk, TeamViewer открылись сами) — немедленно завершите процессы.</li>
+                <li>Перезагрузитесь в <strong>безопасном режиме</strong> (F8 при загрузке Windows) — большинство троянов не запускаются в нём.</li>
+                <li>Запустите полное сканирование антивирусом (желательно Malwarebytes + ваш основной антивирус).</li>
+                <li>Проверьте автозагрузку: Диспетчер задач → Автозагрузка. Отключите незнакомые записи.</li>
+                <li>Проверьте планировщик задач, расширения браузера, установленные программы — удалите незнакомое.</li>
+                <li><strong>С другого, чистого устройства</strong> смените пароли от почты, соцсетей и банков.</li>
+                <li>Включите 2FA везде, где это ещё не сделано.</li>
+                <li>После очистки обновите ОС и все программы до последних версий.</li>
+                <li>При подозрении на глубокое заражение — переустановите систему.</li>
+              </ul>
+            </article>
+
+            <article id="panel-phishing" class="guide-panel">
+              <h3>Если ввели пароль на фишинговом сайте</h3>
+              <p>Действовать нужно немедленно — у вас есть несколько минут до того, как злоумышленник получит уведомление и начнёт действовать.</p>
+              <ul>
+                <li><strong>С другого устройства немедленно смените пароль</strong> в скомпрометированном аккаунте.</li>
+                <li>Завершите все активные сессии в настройках аккаунта («Выйти со всех устройств»).</li>
+                <li>Включите двухфакторную аутентификацию — это заблокирует доступ даже со старым паролем.</li>
+                <li>Проверьте почту восстановления, резервный телефон и привязанные устройства — злоумышленник мог изменить их.</li>
+                <li>Если пароль использовался на других сервисах — срочно меняйте и там.</li>
+                <li>Проверьте историю входов: незнакомые IP и устройства → удалите их сессии.</li>
+                <li>Если скомпрометирована рабочая почта — немедленно сообщите IT-отделу.</li>
+                <li>Проверьте фильтры и правила в почте — мошенники часто настраивают автоперенаправление писем.</li>
+              </ul>
+              <div class="info-box" style="margin-top: 16px;">
+                <strong>Если не можете войти в аккаунт</strong>
+                <p>Злоумышленник уже сменил пароль. Немедленно воспользуйтесь процедурой восстановления аккаунта через почту восстановления или телефон. Для Google — accounts.google.com/signin/recovery. Для ВКонтакте — vk.com/restore.</p>
+              </div>
+            </article>
+
+            <article id="panel-money" class="guide-panel">
+              <h3>Если скомпрометированы банковские данные</h3>
+              <p>При финансовом инциденте каждая минута влияет на шанс вернуть деньги. Действуйте по этому списку строго по порядку.</p>
+              <ul>
+                <li><strong>Немедленно заблокируйте карту</strong> — через приложение банка, интернет-банк или по горячей линии (номер на обороте карты).</li>
+                <li>Сообщите банку о мошеннической операции — попросите запустить процедуру оспаривания (chargeback).</li>
+                <li>Сделайте скриншоты всех подозрительных транзакций до их возможного исчезновения из истории.</li>
+                <li>Смените пароль в интернет-банке и в почте, привязанной к банку.</li>
+                <li>Отключите автоплатежи и шаблоны переводов — проверьте, не добавлены ли чужие реквизиты.</li>
+                <li>Подайте заявление в полицию (лично или через Госуслуги) и в банк — сохраните номера обращений.</li>
+                <li>Проверьте кредитную историю — мошенники могут оформить кредит на ваше имя.</li>
+                <li>Проверьте устройство антивирусом <strong>перед</strong> следующим входом в интернет-банк.</li>
+              </ul>
+              <div class="info-box warn" style="margin-top: 16px;">
+                <strong>Важно о возврате средств</strong>
+                <p>По закону банк обязан вернуть деньги при несанкционированной операции, если вы сообщили об этом в течение суток и сами не нарушили правила безопасности (не называли PIN и коды из SMS). Шансы на возврат выше при быстром обращении.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 02: ГАЙД ПО ПАРОЛЯМ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2>Полный гайд по паролям</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 860px; margin-bottom: 36px;">Пароль — первая и главная линия защиты ваших аккаунтов. Разберём всё: от примеров плохих и хороших паролей до методов их надёжного хранения.</p>
+
+        <div class="password-grid">
+          <div class="pw-block">
+            <div class="pw-block-title">Примеры слабых паролей</div>
+
+            <div class="pw-example bad">
+              <span>123456</span><span class="pw-tag" style="color:var(--accent)">✗ Худший пароль мира</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill weak"></div></div>
+            <div class="pw-strength-label weak" style="margin-bottom:12px">Очень слабый — взлом за &lt;1 секунды</div>
+
+            <div class="pw-example bad">
+              <span>password</span><span class="pw-tag" style="color:var(--accent)">✗ Словарное слово</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill weak"></div></div>
+            <div class="pw-strength-label weak" style="margin-bottom:12px">Очень слабый — мгновенный взлом</div>
+
+            <div class="pw-example bad">
+              <span>ivan1990</span><span class="pw-tag" style="color:var(--accent)">✗ Личные данные</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill weak"></div></div>
+            <div class="pw-strength-label weak" style="margin-bottom:12px">Слабый — легко угадать</div>
+
+            <div class="pw-example bad">
+              <span>Qwerty123!</span><span class="pw-tag" style="color:var(--accent)">✗ Популярная комбинация</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill medium"></div></div>
+            <div class="pw-strength-label medium" style="margin-bottom:12px">Средний — в словарях атакующих</div>
+
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:16px; line-height:1.6;">Все эти пароли есть в базах данных хакеров. Программы для взлома перебирают миллионы популярных комбинаций за секунды.</p>
+          </div>
+
+          <div class="pw-block">
+            <div class="pw-block-title">Примеры сильных паролей</div>
+
+            <div class="pw-example good">
+              <span>K0t!Leg#Na_Okno</span><span class="pw-tag" style="color:var(--green)">✓ Парольная фраза</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill strong"></div></div>
+            <div class="pw-strength-label strong" style="margin-bottom:12px">Очень сильный — тысячи лет взлома</div>
+
+            <div class="pw-example good">
+              <span>mX7!pL@9qR#2wZ</span><span class="pw-tag" style="color:var(--green)">✓ Случайный</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill strong"></div></div>
+            <div class="pw-strength-label strong" style="margin-bottom:12px">Очень сильный — идеален для менеджера</div>
+
+            <div class="pw-example good">
+              <span>Siniy!Avto#Bus@2024</span><span class="pw-tag" style="color:var(--green)">✓ Мнемоника</span>
+            </div>
+            <div class="pw-strength-bar"><div class="pw-strength-fill good"></div></div>
+            <div class="pw-strength-label good" style="margin-bottom:12px">Сильный — легко запомнить</div>
+
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:20px; line-height:1.6; margin-bottom:14px"><strong>Правила сильного пароля:</strong></p>
+            <div class="pw-rule"><span class="pw-rule-icon">✓</span> Минимум 12 символов (лучше 16+)</div>
+            <div class="pw-rule"><span class="pw-rule-icon">✓</span> Заглавные и строчные буквы</div>
+            <div class="pw-rule"><span class="pw-rule-icon">✓</span> Цифры в непредсказуемых местах</div>
+            <div class="pw-rule"><span class="pw-rule-icon">✓</span> Спецсимволы: ! @ # $ % ^ &amp; *</div>
+            <div class="pw-rule"><span class="pw-rule-icon">✓</span> Уникальный для каждого сервиса</div>
+            <div class="pw-rule"><span class="pw-rule-icon">✗</span> Не содержит личных данных (имя, дата рождения)</div>
+          </div>
+        </div>
+
+        <!-- Методы создания паролей -->
+        <div style="margin-top: 40px;">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; margin-bottom:24px;">Три метода создания надёжных паролей</h3>
+          <div class="tips-grid">
+            <article class="tip-card">
+              <div class="tip-label">Метод 1</div>
+              <div class="tip-title">Парольная фраза (Passphrase)</div>
+              <p class="tip-text">Возьмите 4–5 случайных слов, добавьте цифры и спецсимволы между ними. Такой пароль легко запомнить, но крайне сложно взломать перебором.</p>
+              <p class="tip-text"><strong>Пример:</strong> «Кот Лезет На Окно» → <span style="font-family:monospace; color:var(--green)">Кот!Лезет#На@Окно2024</span></p>
+              <ul class="tip-list">
+                <li>Длина получается 20+ символов — отличная защита.</li>
+                <li>Легче запомнить, чем случайный набор символов.</li>
+                <li>Подходит для мастер-пароля менеджера паролей.</li>
+              </ul>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-label">Метод 2</div>
+              <div class="tip-title">Метод первых букв (аббревиатура)</div>
+              <p class="tip-text">Возьмите запоминающуюся фразу и составьте пароль из первых букв каждого слова, добавив цифры и знаки.</p>
+              <p class="tip-text"><strong>Пример:</strong> «В 2008 году я купил синий велосипед за 5000 рублей» → <span style="font-family:monospace; color:var(--green)">V2008gykSv!5000r</span></p>
+              <ul class="tip-list">
+                <li>Фразу помните только вы — пароль невозможно угадать.</li>
+                <li>Разные фразы для разных сервисов — разные пароли.</li>
+              </ul>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-label">Метод 3</div>
+              <div class="tip-title">Генератор + менеджер паролей</div>
+              <p class="tip-text">Самый безопасный способ: менеджер паролей сам генерирует длинные случайные пароли и хранит их зашифрованными. Вам нужно помнить только один мастер-пароль.</p>
+              <ul class="tip-list">
+                <li><strong>Bitwarden</strong> — бесплатный, open-source, синхронизация между устройствами.</li>
+                <li><strong>KeePassXC</strong> — хранит пароли локально, без облака.</li>
+                <li><strong>1Password</strong> — платный, удобный интерфейс, семейные аккаунты.</li>
+              </ul>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-label">Дополнительно</div>
+              <div class="tip-title">Проверка надёжности пароля</div>
+              <p class="tip-text">Используйте надёжные инструменты для проверки паролей. Никогда не вводите настоящие пароли на сторонних сайтах — только похожие для понимания принципа.</p>
+              <ul class="tip-list">
+                <li><strong>haveibeenpwned.com</strong> — проверьте, не утёк ли ваш email в базах хакеров.</li>
+                <li><strong>security.google.com/settings/security/checkup</strong> — аудит безопасности аккаунта Google.</li>
+                <li>Длина важнее сложности: «correcthorsebatterystaple» надёжнее «P@ss1».</li>
+                <li>Каждый дополнительный символ увеличивает время взлома в десятки раз.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 03: ГАЙД ПО МЕНЕДЖЕРАМ ПАРОЛЕЙ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2>Как настроить менеджер паролей: пошагово</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 860px; margin-bottom: 36px;">Переход на менеджер паролей — один из самых важных шагов для защиты аккаунтов. Вот как начать с Bitwarden (бесплатный и безопасный вариант).</p>
+
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-label">Шаг 1</div>
+            <div class="tip-title">Установка и регистрация</div>
+            <ol class="step-list">
+              <li>Перейдите на bitwarden.com и нажмите «Get Started Free».</li>
+              <li>Создайте аккаунт: введите email и <strong>придумайте мастер-пароль</strong> — длинный и запоминающийся (используйте метод парольной фразы).</li>
+              <li>Запишите мастер-пароль на бумаге и храните в надёжном месте. Если забудете — восстановить невозможно.</li>
+              <li>Установите расширение для браузера (Chrome, Firefox, Edge) и приложение на телефон.</li>
+            </ol>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Шаг 2</div>
+            <div class="tip-title">Заполнение хранилища</div>
+            <ol class="step-list">
+              <li>Начните с самых важных аккаунтов: основная почта, банк, Госуслуги, соцсети.</li>
+              <li>При входе на сайт расширение Bitwarden предложит сохранить пароль — нажмите «Сохранить».</li>
+              <li>Для каждого аккаунта сгенерируйте новый уникальный пароль: в Bitwarden нажмите иконку генератора.</li>
+              <li>Используйте пароли длиной 16–20 символов с буквами, цифрами и символами.</li>
+            </ol>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Шаг 3</div>
+            <div class="tip-title">Ежедневное использование</div>
+            <ol class="step-list">
+              <li>Расширение Bitwarden автоматически заполняет логины и пароли на сайтах.</li>
+              <li>Разблокируйте хранилище мастер-паролем (или биометрией на телефоне).</li>
+              <li>Никогда не сохраняйте пароли в самом браузере — только в менеджере.</li>
+              <li>Периодически просматривайте отчёт о слабых и повторяющихся паролях (вкладка «Reports» в Bitwarden).</li>
+            </ol>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Шаг 4</div>
+            <div class="tip-title">Защита самого менеджера паролей</div>
+            <ol class="step-list">
+              <li>Включите двухфакторную аутентификацию для аккаунта Bitwarden.</li>
+              <li>Создайте экспорт хранилища и сохраните его в зашифрованном виде на отдельном носителе.</li>
+              <li>Мастер-пароль не сохраняйте в браузере или на компьютере — только в памяти.</li>
+              <li>Регулярно проверяйте активные сессии и завершайте лишние.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 04: ГАЙД ПО 2FA ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2>Полный гайд по двухфакторной аутентификации</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 860px; margin-bottom: 36px;">2FA — второй замок на двери вашего аккаунта. Даже если пароль украден, без второго фактора войти не получится. Разбираем типы, их надёжность и настройку.</p>
+
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-label">Тип 2FA — Лучший</div>
+            <div class="tip-title">Приложения-аутентификаторы (TOTP)</div>
+            <p class="tip-text">Приложение генерирует одноразовый 6-значный код, который меняется каждые 30 секунд. Код создаётся локально на вашем устройстве и не передаётся по сети — это делает его защищённым от перехвата.</p>
+            <ul class="tip-list">
+              <li><strong>Google Authenticator</strong> — простой и надёжный, без облачного резервного копирования.</li>
+              <li><strong>Яндекс.Ключ</strong> — хорошая альтернатива для русскоязычных пользователей, с резервным копированием.</li>
+              <li><strong>Authy</strong> — синхронизация между устройствами, резервные копии в облаке.</li>
+              <li><strong>Microsoft Authenticator</strong> — удобен для аккаунтов Microsoft, поддерживает другие сервисы.</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Тип 2FA — Хороший</div>
+            <div class="tip-title">SMS-коды</div>
+            <p class="tip-text">Одноразовый код приходит на ваш телефонный номер. Это лучше, чем ничего, но имеет уязвимости: SMS могут быть перехвачены через уязвимости в протоколе SS7 или через атаку SIM-свапинга (злоумышленник переоформляет вашу SIM на себя).</p>
+            <ul class="tip-list">
+              <li>Используйте SMS-коды там, где нет возможности подключить TOTP-приложение.</li>
+              <li>Защитите SIM от переоформления: обратитесь к оператору с запросом на запрет замены SIM без паспорта.</li>
+              <li>Не используйте SMS для самых критичных аккаунтов (банк, Госуслуги) — там лучше TOTP.</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Тип 2FA — Максимальная защита</div>
+            <div class="tip-title">Аппаратные ключи (U2F / FIDO2)</div>
+            <p class="tip-text">Физическое устройство (например, YubiKey), которое подключается к USB или NFC. Это самый надёжный вид 2FA: ключ невозможно скопировать удалённо, а его использование требует физического присутствия. Применяется для защиты критических аккаунтов в крупных компаниях.</p>
+            <ul class="tip-list">
+              <li>YubiKey 5 Series — наиболее популярный аппаратный ключ.</li>
+              <li>Поддерживается Google, GitHub, Microsoft, Facebook и многими другими сервисами.</li>
+              <li>Всегда имейте два ключа: основной и резервный.</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Резервные коды</div>
+            <div class="tip-title">Как не потерять доступ к аккаунту</div>
+            <p class="tip-text">При включении 2FA большинство сервисов выдают резервные коды — одноразовые пароли на случай, если вы потеряете телефон или удалите приложение-аутентификатор. Потеря резервных кодов при потере телефона = потеря доступа к аккаунту.</p>
+            <ul class="tip-list">
+              <li>Распечатайте резервные коды и храните в надёжном месте (сейф, запертый ящик).</li>
+              <li>Сохраните коды в зашифрованном виде в менеджере паролей.</li>
+              <li>Никогда не храните резервные коды в незащищённых заметках или галерее.</li>
+              <li>Если используете Authy — включите резервное копирование, чтобы не потерять коды при смене телефона.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 05: FAQ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2>Часто задаваемые вопросы о паролях и 2FA</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">Как часто нужно менять пароли?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Современные рекомендации NIST (Национальный институт стандартов и технологий США) изменились: регулярная принудительная смена паролей больше не считается лучшей практикой. Постоянная смена заставляет людей использовать предсказуемые паттерны (Пароль1 → Пароль2 → Пароль3).</p>
+              <p>Меняйте пароль в следующих случаях:</p>
+              <ul>
+                <li>Узнали о взломе или утечке данных с сервиса, которым пользуетесь.</li>
+                <li>Подозреваете, что пароль был скомпрометирован (ввели на подозрительном сайте).</li>
+                <li>Разлогинились со всех сессий после использования чужого компьютера.</li>
+                <li>Раз в год для самых критичных аккаунтов (банк, основная почта) — как профилактика.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">Что делать, если я забыл мастер-пароль менеджера паролей?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Это серьёзная ситуация — большинство менеджеров паролей шифруют данные так, что восстановить мастер-пароль технически невозможно даже для самого сервиса. Это сделано специально для защиты ваших данных.</p>
+              <p>Что можно попробовать:</p>
+              <ul>
+                <li>Проверьте, не сохранили ли вы подсказку к паролю (Bitwarden позволяет запросить подсказку по email).</li>
+                <li>Если создавали экспорт хранилища — он зашифрован тем же паролем. Попробуйте вспомнить вариации.</li>
+                <li>Если включена биометрия на телефоне — возможно, ещё можно открыть приложение и скопировать пароли.</li>
+                <li>При полной потере доступа придётся создать новое хранилище и вручную восстанавливать пароли через функции «Забыл пароль» на каждом сайте.</li>
+              </ul>
+              <p>Вывод: запишите мастер-пароль на бумаге и храните в надёжном месте. Это единственная надёжная страховка.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">Можно ли доверять встроенному менеджеру паролей в браузере?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Встроенные менеджеры в Chrome, Firefox и Edge значительно улучшились и вполне подходят для базового использования. Они автоматически генерируют сильные пароли и синхронизируют их между устройствами.</p>
+              <p>Однако у них есть ограничения по сравнению со специализированными решениями:</p>
+              <ul>
+                <li>Пароли хранятся в контексте браузера — вредоносные расширения потенциально могут получить к ним доступ.</li>
+                <li>Нет кросс-браузерной синхронизации (пароли Chrome не переходят в Firefox).</li>
+                <li>Ограниченные функции аудита безопасности.</li>
+                <li>Нет возможности хранить другие типы данных (ключи, заметки, паспортные данные).</li>
+              </ul>
+              <p>Вывод: встроенный менеджер лучше, чем ничего. Специализированный (Bitwarden, KeePass) — лучше встроенного.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-brand">КиберЗащита - Руководство по безопасности ПК</div>
+    <div class="footer-note">Информация носит образовательный характер</div>
+  </footer>
+
+  <script>
+    function toggleFaq(el) {
+      var item = el.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) { item.classList.add('open'); }
+    }
+  </script>
+</body>
+</html>

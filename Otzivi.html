@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КиберЗащита - Отзывы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html"><span class="logo-dot"></span>КиберЗащита</a>
+    <nav>
+      <a class="nav-btn" href="index.html">Главная</a>
+      <a class="nav-btn" href="recommendations.html">Советы</a>
+      <a class="nav-btn" href="threats.html">Угрозы</a>
+      <a class="nav-btn" href="Gide.html">Гайды</a>
+      <a class="nav-btn" href="myths.html">Фейки</a>
+      <a class="nav-btn active" href="Otzivi.html">Отзывы</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+
+      <!-- ===== SECTION 01: ОТЗЫВЫ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2>Отзывы пользователей</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 840px; margin-bottom: 24px;">Здесь люди делятся реальным опытом после применения рекомендаций сайта. Ниже вы можете оставить свой отзыв.</p>
+
+        <div class="reviews-grid" id="reviews-list">
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Алексей, 29</span>
+              <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">После включения 2FA и замены паролей на уникальные через Bitwarden стало намного спокойнее. Отдельно помог гайд по действиям при фишинге — моя коллега попала в такую ситуацию, и мы знали, что делать.</p>
+          </article>
+
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Марина, 34</span>
+              <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">Сделала резервные копии по правилу 3-2-1 и поставила менеджер паролей. Настроила всё за один вечер по вашим шагам. Особенно понравился раздел про мифы — не знала, что Mac тоже заражается.</p>
+          </article>
+
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Игорь, 41</span>
+              <span class="review-rating">4/5</span>
+            </div>
+            <p class="review-text">Очень полезный раздел с угрозами. Добавил VPN для публичных сетей, теперь не подключаюсь к открытым Wi-Fi без защиты. Хотелось бы больше примеров из российской практики.</p>
+          </article>
+
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Татьяна, 52</span>
+              <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">Мне позвонили «из банка» и чуть не убедили перевести деньги. После прочтения раздела про социальную инженерию поняла, что это мошенники. Положила трубку и перезвонила в банк сама — там ничего не знали ни о каком звонке.</p>
+          </article>
+
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Дмитрий, 23</span>
+              <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">Как студент IT понимаю тему, но раздел с мифами был полезен — некоторые вещи сам не знал. Особенно про то, что форматирование диска не уничтожает данные. Поделился сайтом с родителями.</p>
+          </article>
+
+          <article class="review-item">
+            <div class="review-head">
+              <span class="review-name">Ольга, 37</span>
+              <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">Нашла этот сайт после того, как мой аккаунт ВКонтакте взломали. Теперь на всех аккаунтах стоит 2FA через приложение. Гайд «Украли аккаунт» очень помог при восстановлении доступа.</p>
+          </article>
+        </div>
+
+        <div class="review-form-wrap" style="margin-top: 24px;">
+          <h3>Оставить свой отзыв</h3>
+          <form class="review-form" id="review-form">
+            <label for="review-name">Ваше имя</label>
+            <input id="review-name" name="review-name" type="text" placeholder="Например, Анна" required>
+
+            <label for="review-text">Ваш отзыв</label>
+            <textarea id="review-text" name="review-text" placeholder="Расскажите, что было полезно и какие советы вы уже применили" required></textarea>
+
+            <button type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 02: ЧЕКЛИСТ БЕЗОПАСНОСТИ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2>Чеклист безопасности</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 840px; margin-bottom: 36px;">Используйте этот чеклист для самооценки уровня вашей цифровой безопасности. Отмечайте пункты, которые уже выполнены.</p>
+
+        <div class="checklist-layout">
+          <div class="checklist-group">
+            <h3>Базовый уровень</h3>
+
+            <div class="checklist-item">
+              <div class="check-box" id="cb1" onclick="toggleCheck(this)" style="cursor:pointer">&#10003;</div>
+              <span class="check-text">Установлены уникальные пароли на всех важных аккаунтах (почта, банк, соцсети)</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb2" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Включена двухфакторная аутентификация на основной почте</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb3" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Включены автообновления операционной системы</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb4" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Установлен и активен антивирус</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb5" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Сделана хотя бы одна резервная копия важных данных</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb6" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Смените стандартный пароль на роутере дома</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb7" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Проверил email на haveibeenpwned.com на предмет утечек</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb8" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Включена блокировка экрана на телефоне (PIN или биометрия)</span>
+            </div>
+          </div>
+
+          <div class="checklist-group">
+            <h3>Продвинутый уровень</h3>
+
+            <div class="checklist-item">
+              <div class="check-box" id="cb9" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Установлен менеджер паролей (Bitwarden / KeePassXC)</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb10" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">2FA включена через приложение-аутентификатор (не только SMS) на всех важных аккаунтах</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb11" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Резервные копии хранятся по правилу 3-2-1 (включая облако)</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb12" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Прошивка роутера обновлена до последней версии</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb13" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Создана гостевая Wi-Fi сеть для IoT-устройств и гостей</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb14" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">В браузере установлен блокировщик рекламы и трекеров (uBlock Origin)</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb15" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Резервные коды от 2FA сохранены в надёжном месте</span>
+            </div>
+            <div class="checklist-item">
+              <div class="check-box" id="cb16" onclick="toggleCheck(this)" style="cursor:pointer; background: var(--white); color: transparent;">&#10003;</div>
+              <span class="check-text">Включено шифрование устройства (BitLocker на Windows, FileVault на Mac)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Счётчик прогресса -->
+        <div style="margin-top: 32px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--white);">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-bottom: 12px;">Ваш прогресс</div>
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <div id="progress-bar-wrap" style="flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden;">
+              <div id="progress-bar" style="height: 100%; background: var(--green); border-radius: 4px; width: 6.25%; transition: width 0.3s;"></div>
+            </div>
+            <div id="progress-text" style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; font-weight: 500; color: var(--black); min-width: 60px;">1 / 16</div>
+          </div>
+          <div id="progress-label" style="font-size: 0.85rem; color: var(--mid); margin-top: 10px;">Хорошее начало. Продолжайте отмечать выполненные пункты.</div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 03: ПОЛЕЗНЫЕ РЕСУРСЫ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2>Полезные ресурсы и инструменты</h2>
+        </div>
+
+        <p class="hero-body" style="max-width: 840px; margin-bottom: 36px;">Проверенные инструменты и сервисы, которые помогут повысить уровень вашей цифровой безопасности.</p>
+
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-label">Проверка и мониторинг</div>
+            <div class="tip-title">Узнайте, не скомпрометированы ли ваши данные</div>
+            <ul class="tip-list">
+              <li><strong>haveibeenpwned.com</strong> — проверьте email на вхождение в базы утечек. Можно подписаться на уведомления о новых утечках.</li>
+              <li><strong>monitor.firefox.com</strong> — аналогичный сервис от Mozilla с более подробными отчётами.</li>
+              <li><strong>security.google.com/settings/security/checkup</strong> — аудит безопасности аккаунта Google.</li>
+              <li><strong>dehashed.com</strong> — расширенный поиск по базам утечек (частично платный).</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Менеджеры паролей</div>
+            <div class="tip-title">Надёжное хранение паролей</div>
+            <ul class="tip-list">
+              <li><strong>Bitwarden</strong> (bitwarden.com) — бесплатный, open-source, кроссплатформенный. Рекомендован как оптимальный выбор.</li>
+              <li><strong>KeePassXC</strong> (keepassxc.org) — хранит пароли локально, без облака. Максимальная приватность.</li>
+              <li><strong>1Password</strong> — платный ($3/мес), удобный интерфейс, семейные аккаунты.</li>
+              <li><strong>Яндекс.Ключ</strong> — российский аутентификатор с функцией хранения паролей.</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Инструменты безопасности</div>
+            <div class="tip-title">Дополнительная защита</div>
+            <ul class="tip-list">
+              <li><strong>uBlock Origin</strong> — лучший блокировщик рекламы и трекеров для браузера (бесплатный).</li>
+              <li><strong>Malwarebytes</strong> — сканер для разовой проверки системы на вредоносное ПО.</li>
+              <li><strong>ProtonVPN / Mullvad</strong> — VPN-сервисы с политикой отсутствия логов, прошедшие независимый аудит.</li>
+              <li><strong>Kaspersky Rescue Disk</strong> — загрузочный диск для лечения заражённого ПК.</li>
+            </ul>
+          </article>
+
+          <article class="tip-card">
+            <div class="tip-label">Ресурсы для обучения</div>
+            <div class="tip-title">Развивайте знания</div>
+            <ul class="tip-list">
+              <li><strong>nomoreransom.org</strong> — бесплатные ключи дешифровки для жертв ransomware (проект Интерпола и Европола).</li>
+              <li><strong>securelist.ru</strong> — аналитика угроз от Лаборатории Касперского на русском языке.</li>
+              <li><strong>habr.com</strong> (тег «информационная безопасность») — статьи российских специалистов.</li>
+              <li><strong>ptsecurity.com</strong> — Positive Technologies, отчёты об актуальных угрозах.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 04: FAQ ===== -->
+      <section>
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2>Вопросы о безопасности</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">С чего начать, если никогда не занимался кибербезопасностью?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Начните с трёх самых важных шагов — они дадут максимальный результат при минимальных усилиях:</p>
+              <ul>
+                <li><strong>Шаг 1 (10 минут):</strong> Включите двухфакторную аутентификацию на основной почте. Это предотвратит большинство попыток взлома. Инструкция — в разделе «Гайды» на этом сайте.</li>
+                <li><strong>Шаг 2 (30 минут):</strong> Проверьте свой email на haveibeenpwned.com. Если найдёте утечки — смените пароли на этих сервисах.</li>
+                <li><strong>Шаг 3 (1 час):</strong> Установите Bitwarden и начните сохранять пароли в него. По мере использования разных сайтов менеджер будет постепенно наполняться.</li>
+              </ul>
+              <p>После этого — настройте резервное копирование. Остальные меры можно внедрять постепенно, не торопясь.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">Как объяснить пожилым родственникам основы безопасности?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Несколько эффективных подходов:</p>
+              <ul>
+                <li>Используйте аналогии из реального мира: «Фишинг — это как мошенник у подъезда, который представляется сантехником». «Двойная аутентификация — это как замок и цепочка на двери».</li>
+                <li>Сосредоточьтесь на 2–3 правилах, которые соответствуют их ситуации: не называть коды из SMS никому, не переходить по ссылкам из неожиданных писем, позвонить вам перед любым нестандартным действием с деньгами.</li>
+                <li>Установите им менеджер паролей и настройте сами — объяснить им принцип важнее, чем научить управлять.</li>
+                <li>Объясните последствиями: «Если назовёшь этот код — мошенник снимет деньги с карты».</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="faq-q-text">Насколько безопасно хранить данные в облаке (Google Drive, Яндекс.Диск)?</span>
+              <span class="faq-arrow">▶</span>
+            </div>
+            <div class="faq-answer">
+              <p>Крупные облачные провайдеры (Google, Microsoft, Яндекс) инвестируют миллиарды в защиту своей инфраструктуры. Ваши данные там защищены несравненно лучше, чем на среднестатистическом домашнем компьютере. Вероятность взлома серверов Google значительно ниже, чем вероятность кражи или поломки вашего устройства.</p>
+              <p>Основные риски облачного хранения:</p>
+              <ul>
+                <li>Компрометация вашего аккаунта (слабый пароль, отсутствие 2FA) — это главный риск.</li>
+                <li>Юридический доступ: провайдер может предоставить данные по запросу властей.</li>
+                <li>Зависимость от провайдера: если аккаунт заблокируют, данные станут недоступны.</li>
+              </ul>
+              <p>Совет: для особо чувствительных данных используйте локальное шифрование перед загрузкой в облако (Cryptomator — бесплатный инструмент для шифрования файлов до синхронизации).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-brand">КиберЗащита - Руководство по безопасности ПК</div>
+    <div class="footer-note">Информация носит образовательный характер</div>
+  </footer>
+
+  <script>
+    // ===== FAQ =====
+    function toggleFaq(el) {
+      var item = el.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) { item.classList.add('open'); }
+    }
+
+    // ===== CHECKLIST =====
+    function toggleCheck(el) {
+      var isChecked = el.style.color !== 'transparent' && el.style.color !== '';
+      if (isChecked) {
+        el.style.background = 'var(--white)';
+        el.style.color = 'transparent';
+      } else {
+        el.style.background = '';
+        el.style.color = 'var(--green)';
+      }
+      updateProgress();
+    }
+
+    function updateProgress() {
+      var total = 16;
+      var checked = 0;
+      for (var i = 1; i <= total; i++) {
+        var cb = document.getElementById('cb' + i);
+        if (cb && cb.style.color !== 'transparent' && cb.style.color !== '') checked++;
+      }
+      var pct = (checked / total) * 100;
+      document.getElementById('progress-bar').style.width = Math.max(pct, 1) + '%';
+      document.getElementById('progress-text').textContent = checked + ' / ' + total;
+      var label = document.getElementById('progress-label');
+      if (checked === 0) label.textContent = 'Отметьте выполненные пункты.';
+      else if (checked < 5) label.textContent = 'Хорошее начало. Продолжайте отмечать выполненные пункты.';
+      else if (checked < 10) label.textContent = 'Неплохой прогресс! Есть к чему стремиться.';
+      else if (checked < 16) label.textContent = 'Отличный уровень защиты. Доделайте оставшееся!';
+      else label.textContent = '🎉 Отличная работа! Вы выполнили все пункты чеклиста.';
+    }
+
+    // ===== REVIEWS =====
+    (function () {
+      var REVIEWS_KEY = 'kz-reviews';
+      var reviewsList = document.getElementById('reviews-list');
+      var reviewForm = document.getElementById('review-form');
+
+      function createReviewElement(name, text) {
+        var article = document.createElement('article');
+        article.className = 'review-item';
+        var head = document.createElement('div');
+        head.className = 'review-head';
+        var nameEl = document.createElement('span');
+        nameEl.className = 'review-name';
+        nameEl.textContent = name;
+        var ratingEl = document.createElement('span');
+        ratingEl.className = 'review-rating';
+        ratingEl.textContent = 'Новый';
+        var textEl = document.createElement('p');
+        textEl.className = 'review-text';
+        textEl.textContent = text;
+        head.appendChild(nameEl);
+        head.appendChild(ratingEl);
+        article.appendChild(head);
+        article.appendChild(textEl);
+        return article;
+      }
+
+      function loadSavedReviews() {
+        var raw = localStorage.getItem(REVIEWS_KEY);
+        if (!raw) return;
+        var reviews = [];
+        try { reviews = JSON.parse(raw); } catch (e) { return; }
+        reviews.forEach(function (item) {
+          reviewsList.insertBefore(createReviewElement(item.name, item.text), reviewsList.firstChild);
+        });
+      }
+
+      function saveReview(name, text) {
+        var reviews = [];
+        var raw = localStorage.getItem(REVIEWS_KEY);
+        if (raw) { try { reviews = JSON.parse(raw); } catch (e) { reviews = []; } }
+        reviews.unshift({ name: name, text: text });
+        localStorage.setItem(REVIEWS_KEY, JSON.stringify(reviews));
+      }
+
+      loadSavedReviews();
+
+      reviewForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('review-name').value.trim();
+        var text = document.getElementById('review-text').value.trim();
+        if (!name || !text) return;
+        saveReview(name, text);
+        window.location.href = 'thankyou.html';
+      });
+    })();
+  </script>
+</body>
+</html>
